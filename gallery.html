@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/gallery.css" />
+  </head>
+  <body>
+    <!-- Back button to navigate to video streaming -->
+    <div class="back">BACK</div>
+
+    <!-- Gallery Component which will show all the recordings and pictures -->
+    <div class="gallery-cont"></div>
+    <script src="./db/db.js"></script>
+    <script src="./scripts/gallery.js"></script>
+    <script>
+      //Route to Video Stream
+      let backBtn = document.querySelector(".back");
+      backBtn.addEventListener("click", (e) => {
+        location.assign("./index.html");
+      });
+    </script>
+  </body>
+</html>
